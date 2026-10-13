@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "text": "EduQuery College offers a 4-year B.Tech Computer Science program covering full-stack development, artificial intelligence, machine learning, data structures, algorithms, and cybersecurity with industry-led projects.",
+    "type": "course"
+  },
+  {
+    "id": 2,
+    "text": "The BBA Business Analytics program is a 3-year undergraduate course focused on market trends, data-driven decision making, statistics, visualization, and organizational growth.",
+    "type": "course"
+  },
+  {
+    "id": 3,
+    "text": "B.Tech Civil Engineering is a 4-year program in sustainable infrastructure, modern urban planning, structural design, and construction management.",
+    "type": "course"
+  },
+  {
+    "id": 4,
+    "text": "B.Tech Electronics and Communication Engineering (ECE) is a 4-year program covering VLSI, embedded systems, communication networks, and IoT.",
+    "type": "course"
+  },
+  {
+    "id": 5,
+    "text": "The MCA program is a 2-year postgraduate course in software engineering, databases, cloud computing, and applied AI for graduates from computing or related backgrounds.",
+    "type": "course"
+  },
+  {
+    "id": 6,
+    "text": "MBA at EduQuery College is a 2-year postgraduate program with specializations in Finance, Marketing, Human Resources, and Business Analytics.",
+    "type": "course"
+  },
+  {
+    "id": 7,
+    "text": "B.Sc Data Science is a 3-year program covering Python, SQL, statistics, machine learning, and applied analytics projects.",
+    "type": "course"
+  },
+  {
+    "id": 8,
+    "text": "Undergraduate engineering admission requires Class 12 (PCM) with a minimum of 60% in core subjects, plus qualification in the National Entrance Test (NET) or the University Merit Exam held in May.",
+    "type": "admission"
+  },
+  {
+    "id": 9,
+    "text": "Management and analytics undergraduate programs require Class 12 in any stream with at least 55% aggregate. Mathematics at Class 12 is preferred for Business Analytics and Data Science.",
+    "type": "admission"
+  },
+  {
+    "id": 10,
+    "text": "MBA admission requires a bachelor's degree with 50% aggregate and a valid CAT, MAT, or University Aptitude Test score, followed by a counseling interview.",
+    "type": "admission"
+  },
+  {
+    "id": 11,
+    "text": "MCA admission requires a bachelor's degree with Mathematics at 10+2 or graduation level and a minimum of 50% marks.",
+    "type": "admission"
+  },
+  {
+    "id": 12,
+    "text": "The primary undergraduate application window closes on July 15 every year. Early applications submitted by March are considered for scholarship eligibility.",
+    "type": "admission"
+  },
+  {
+    "id": 13,
+    "text": "IB, Cambridge, and other international boards are accepted. Students should submit predicted grades and an equivalence certificate during counseling.",
+    "type": "admission"
+  },
+  {
+    "id": 14,
+    "text": "The admission process has three steps: academic eligibility check, entrance examination, and a counseling session to map student goals to the curriculum.",
+    "type": "admission"
+  },
+  {
+    "id": 15,
+    "text": "Annual tuition for B.Tech programs is INR 1,60,000. Hostel charges are INR 80,000 per year including meals. A one-time registration fee of INR 10,000 is payable at admission.",
+    "type": "fees"
+  },
+  {
+    "id": 16,
+    "text": "Annual tuition for BBA and B.Sc Data Science is INR 1,20,000. MBA annual tuition is INR 2,40,000. MCA annual tuition is INR 1,50,000.",
+    "type": "fees"
+  },
+  {
+    "id": 17,
+    "text": "Merit scholarships of 25% to 50% tuition waiver are available for students scoring above 90% in Class 12 or ranking in the top 5% of the entrance exam.",
+    "type": "fees"
+  },
+  {
+    "id": 18,
+    "text": "Need-based financial aid and education loan assistance letters are provided through the admissions office after fee assessment.",
+    "type": "fees"
+  },
+  {
+    "id": 19,
+    "text": "The overall placement rate at EduQuery College is 92% for eligible final-year students in the latest academic year.",
+    "type": "placement"
+  },
+  {
+    "id": 20,
+    "text": "The average placement package is 6 LPA and the highest package offered is 18 LPA.",
+    "type": "placement"
+  },
+  {
+    "id": 21,
+    "text": "Computer Science students recorded an average package of 7.5 LPA with a highest offer of 18 LPA in software, AI, and product roles.",
+    "type": "placement"
+  },
+  {
+    "id": 22,
+    "text": "Top recruiters include Infosys, TCS, Wipro, Accenture, Amazon, Deloitte, Capgemini, and HDFC Bank.",
+    "type": "placement"
+  },
+  {
+    "id": 23,
+    "text": "The Training and Placement Cell runs aptitude training, mock interviews, resume workshops, and internship drives from the fifth semester onward.",
+    "type": "placement"
+  },
+  {
+    "id": 24,
+    "text": "Paid internships are available from the sixth semester. Typical internship stipends range from INR 10,000 to INR 40,000 per month.",
+    "type": "placement"
+  },
+  {
+    "id": 25,
+    "text": "The campus library is open from 8:00 AM to 10:00 PM on weekdays and provides digital journals, IEEE access, and quiet study zones.",
+    "type": "campus"
+  },
+  {
+    "id": 26,
+    "text": "Student hostel facilities include Wi-Fi, a mess, gym, medical room, and 24x7 security. First-year undergraduates are given priority for on-campus housing.",
+    "type": "campus"
+  },
+  {
+    "id": 27,
+    "text": "The academic year typically starts in August. Odd semester exams are in December and even semester exams are in May.",
+    "type": "campus"
+  },
+  {
+    "id": 28,
+    "text": "The help desk can answer questions about courses, admissions, fees, scholarships, placements, internships, hostel, and campus facilities. For documents and official letters, contact the registrar at registrar@eduquery.edu.",
+    "type": "general"
+  }
+]

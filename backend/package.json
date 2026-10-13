@@ -1,0 +1,24 @@
+{
+  "name": "college-helpdesk-backend",
+  "version": "1.0.0",
+  "description": "College Help Desk Agent API with RAG retrieval",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "college",
+    "helpdesk",
+    "rag"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "langchain": "^1.5.15"
+  }
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#42474f",
+                        "on-primary-fixed": "#001c37",
+                        "outline-variant": "#c2c7d1",
+                        "secondary": "#5d5f5f",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#2d6197",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#454747",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb780",
+                        "tertiary": "#532800",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "surface-container": "#eceef0",
+                        "primary": "#00355f",
+                        "on-background": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e2e2e2",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-primary-fixed-variant": "#07497d",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#727780",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary-container": "#f9a767",
+                        "primary-fixed-dim": "#a0c9ff",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container-low": "#f2f4f6",
+                        "on-surface": "#191c1e",
+                        "secondary-container": "#dfe0e0",
+                        "inverse-surface": "#2d3133",
+                        "surface-dim": "#d8dadc",
+                        "surface": "#f7f9fb",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-container": "#0f4c81",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#8ebdf9",
+                        "on-tertiary-fixed": "#2f1400",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed": "#ffdcc4",
+                        "on-secondary-container": "#616363",
+                        "inverse-primary": "#a0c9ff",
+                        "tertiary-container": "#743b00",
+                        "inverse-on-surface": "#eff1f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "stack-md": "24px",
+                        "stack-sm": "12px",
+                        "gutter": "24px",
+                        "stack-lg": "48px",
+                        "container-max-width": "1120px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f7f9fb;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+<div class="max-w-[1120px] mx-auto flex justify-between items-center h-20 px-8">
+<div class="text-xl font-black text-blue-900 tracking-tighter">EduQuery Help Desk</div>
+<nav class="hidden md:flex items-center gap-8 font-inter text-sm tracking-tight">
+<a class="text-blue-900 font-bold border-b-2 border-blue-900 pb-1" href="#courses">Courses</a>
+<a class="text-slate-600 hover:text-blue-900 transition-all duration-200" href="#admissions">Admissions</a>
+<a class="text-slate-600 hover:text-blue-900 transition-all duration-200" href="#placements">Placements</a>
+<a class="text-slate-600 hover:text-blue-900 transition-all duration-200" href="#faqs">FAQs</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:block relative">
+<input class="pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search knowledge base..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-bold text-label-bold active:scale-95 duration-100 shadow-sm hover:bg-primary-container transition-colors">
+                    Student Portal
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="max-w-[1120px] mx-auto px-8 py-24 flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-stack-md">
+<span class="font-label-bold text-label-bold text-primary uppercase tracking-widest bg-primary-fixed px-3 py-1 rounded-full">Intelligent Guidance</span>
+<h1 class="font-display-xl text-display-xl text-primary">Your Academic Journey Starts Here</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Navigate the complexities of university life with EduQuery. Our AI-powered help desk provides instant clarity on courses, admissions, and careers, tailored specifically for your future.
+                </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:shadow-lg transition-all">Explore Programs</button>
+<button class="border border-primary text-primary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:bg-primary/5 transition-all">View Admission Guide</button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A professional and bright photography of diverse university students collaborating in a high-tech, minimalist campus lounge. The lighting is airy and natural, emphasizing a clean light-mode aesthetic with soft blue and white tones. The students are engaged in a calm, productive discussion around modern digital tablets, embodying a knowledgeable and approachable atmosphere consistent with a corporate modern educational brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi-RhMSSC3KzIVGrHM23Yv4Va3F6I1b5aPzcReLAtHRL716hwmTvLOgCs96ZyVqtAy-5uVK7lCaraHP6Nf0ZYLeftNxK5lMEPIKVo_IgENBkEntCjrqnqCZWIGSepxjcGcU1zE-V0v0PVwFq_BFOrLDRV9sqcSydARhhqAc8RZ0CdA5JCdkVqiyXV3siJLSnn5ljpzrBKPt8oErXICjXq6BAwTUDIe_33d9wdHG4M9f_WQ4xE1Dg7_Tj-zpCBq08sjBGOvnd0KFbLg"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+</div>
+<div>
+<p class="font-label-bold text-label-bold">UGC Accredited</p>
+<p class="text-caption text-on-surface-variant">Top Tier Institution</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Courses Section -->
+<section class="mt-section-gap bg-white py-24" id="courses">
+<div class="max-w-[1120px] mx-auto px-8">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">Popular Programs</h2>
+<p class="text-body-md text-on-surface-variant max-w-2xl mx-auto">Discover market-leading courses designed to transform you into a future-ready professional.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 bg-white border border-slate-200 rounded-xl hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">computer</span>
+</div>
+<span class="font-label-bold text-label-bold text-primary uppercase mb-2 block">Engineering</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Computer Science</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Master full-stack development, AI, and cybersecurity with industry-led projects.</p>
+<button class="text-primary font-label-bold text-label-bold flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+<!-- Card 2 -->
+<div class="p-8 bg-white border border-slate-200 rounded-xl hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-tertiary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">analytics</span>
+</div>
+<span class="font-label-bold text-label-bold text-tertiary uppercase mb-2 block">Management</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Business Analytics</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Analyze market trends and drive organizational growth using data-driven insights.</p>
+<button class="text-primary font-label-bold text-label-bold flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+<!-- Card 3 -->
+<div class="p-8 bg-white border border-slate-200 rounded-xl hover:shadow-xl transition-all group">
+<div class="w-14 h-14 bg-secondary-container flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">architecture</span>
+</div>
+<span class="font-label-bold text-label-bold text-secondary uppercase mb-2 block">Design</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Civil Engineering</h3>
+<p class="text-body-md text-on-surface-variant mb-6">Build the infrastructure of tomorrow with sustainable and modern urban planning.</p>
+<button class="text-primary font-label-bold text-label-bold flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Admissions Section -->
+<section class="mt-section-gap py-24" id="admissions">
+<div class="max-w-[1120px] mx-auto px-8">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="flex-1">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Seamless Admission Process</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">1</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-2">Academic Eligibility</h4>
+<p class="text-body-md text-on-surface-variant">Candidates must have completed 12th grade with a minimum of 60% in core subjects (PCM/PCB).</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">2</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-2">Entrance Examination</h4>
+<p class="text-body-md text-on-surface-variant">Qualify through the National Entrance Test (NET) or our University Merit Exam held in May.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">3</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-2">Counseling &amp; Fit</h4>
+<p class="text-body-md text-on-surface-variant">A personal interaction session to understand your goals and map them to our curriculum.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container rounded-2xl p-12 border border-slate-200">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Frequently Asked Questions</h3>
+<div class="space-y-4">
+<details class="group bg-white rounded-lg border border-slate-100 overflow-hidden">
+<summary class="p-4 cursor-pointer font-label-bold text-label-bold flex justify-between items-center list-none hover:bg-slate-50">
+                                    What is the deadline for applications?
+                                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 text-body-md text-on-surface-variant border-t border-slate-50">
+                                    The primary application window closes on July 15th every year. Early birds can apply by March for scholarship eligibility.
+                                </div>
+</details>
+<details class="group bg-white rounded-lg border border-slate-100 overflow-hidden">
+<summary class="p-4 cursor-pointer font-label-bold text-label-bold flex justify-between items-center list-none hover:bg-slate-50">
+                                    Are international boards accepted?
+                                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 text-body-md text-on-surface-variant border-t border-slate-50">
+                                    Yes, IB, A-Levels, and other international certifications are accepted upon verification of equivalency.
+                                </div>
+</details>
+<details class="group bg-white rounded-lg border border-slate-100 overflow-hidden">
+<summary class="p-4 cursor-pointer font-label-bold text-label-bold flex justify-between items-center list-none hover:bg-slate-50">
+                                    Can I apply for multiple courses?
+                                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 text-body-md text-on-surface-variant border-t border-slate-50">
+                                    You can list up to 3 preferences in a single application form.
+                                </div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Placements Section -->
+<section class="mt-section-gap bg-primary text-on-primary py-24" id="placements">
+<div class="max-w-[1120px] mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display-xl text-display-xl mb-8">Career Excellence &amp; Placements</h2>
+<p class="text-body-lg text-on-primary-container mb-12">We don't just provide education; we build careers. Our placement cell works with 500+ global recruiters to ensure our students land their dream roles.</p>
+<div class="grid grid-cols-2 gap-8">
+<div class="bg-primary-container p-8 rounded-xl border border-white/10">
+<p class="text-caption uppercase tracking-widest text-on-primary-container mb-2">Average Package</p>
+<p class="text-4xl font-extrabold text-white">6 LPA</p>
+</div>
+<div class="bg-primary-container p-8 rounded-xl border border-white/10">
+<p class="text-caption uppercase tracking-widest text-on-primary-container mb-2">Highest Package</p>
+<p class="text-4xl font-extrabold text-white">18 LPA</p>
+</div>
+</div>
+</div>
+<div class="bg-white/5 p-8 rounded-[2rem] border border-white/10 backdrop-blur-sm">
+<h4 class="font-label-bold text-label-bold mb-8 text-center uppercase tracking-widest">Top Hiring Partners</h4>
+<div class="grid grid-cols-3 gap-8 opacity-70">
+<div class="h-16 flex items-center justify-center font-bold text-2xl tracking-tighter">TECHCORP</div>
+<div class="h-16 flex items-center justify-center font-bold text-2xl tracking-tighter">GLO-DATA</div>
+<div class="h-16 flex items-center justify-center font-bold text-2xl tracking-tighter">NEXUS AI</div>
+<div class="h-16 flex items-center justify-center font-bold text-2xl tracking-tighter">FIN-SOLVE</div>
+<div class="h-16 flex items-center justify-center font-bold text-2xl tracking-tighter">EDU-NEXT</div>
+<div class="h-16 flex items-center justify-center font-bold text-2xl tracking-tighter">BLUE-CHIP</div>
+</div>
+<div class="mt-12 p-6 bg-primary-container rounded-xl flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-on-primary-container">rocket_launch</span>
+<p class="text-body-md font-medium">Over 94% placement rate for the 2023 batch.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (Hidden on Mobile, serves as Drawer for Chatbot Logic) -->
+<aside class="fixed right-0 top-0 h-full w-80 z-[60] bg-white shadow-2xl translate-x-full transition-transform duration-300" id="chat-sidebar">
+<div class="flex flex-col h-full py-8 px-4">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 bg-surface-container rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A friendly and intelligent digital avatar of a young female academic assistant. She has a welcoming smile, wearing modern glasses and a smart-casual academic outfit. The portrait is set against a clean, softly blurred library background with warm, natural lighting that reinforces a helpful and approachable corporate modern personality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjJfvu5YTDQlRYzbl84g2aHv_BOE3EbdenvdAjk9TA4TuFJz2Y2-k0pZz4X1cifDq6yX9bznIVAou9kdwbp0gEdCGn-9s_ps2iuan4DieVh4Pabkd5LyqvFugMiZ3iZppJdPT-ihzUKrH3shRllLD5wzz2Hk4MahXBOWgBw9u6GTqCZ8qTD9rdX9xnylTuyuTQ6-IfaX8eeB1tvAI7Y-pwDUKQTPlUddG_9mCHp0dNtn_qODtYaAtyWbT9RbGlBqNBH-YSBopC1a8E"/>
+</div>
+<div>
+<h5 class="font-bold text-slate-900">College Help Desk</h5>
+<p class="text-caption text-slate-500">Knowledgeable &amp; Approachable</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<div class="p-3 bg-teal-50 text-teal-700 border-r-4 border-teal-500 flex items-center gap-3">
+<span class="material-symbols-outlined">smart_toy</span>
+                    Assistant
+                </div>
+<div class="p-3 text-slate-500 hover:bg-slate-50 flex items-center gap-3 transition-transform hover:translate-x-1">
+<span class="material-symbols-outlined">bolt</span>
+                    Quick Links
+                </div>
+<div class="p-3 text-slate-500 hover:bg-slate-50 flex items-center gap-3 transition-transform hover:translate-x-1">
+<span class="material-symbols-outlined">history</span>
+                    History
+                </div>
+</nav>
+<button class="w-full mt-4 bg-primary text-on-primary py-4 rounded-xl font-label-bold shadow-lg active:shadow-inner">
+                Start New Chat
+            </button>
+</div>
+</aside>
+<!-- Floating Chatbot Bubble -->
+<div class="fixed bottom-8 right-8 z-[70] flex flex-col items-end gap-4">
+<div class="bg-white px-4 py-2 rounded-lg shadow-xl border border-teal-100 text-sm font-medium animate-bounce">
+            Ask me anything!
+        </div>
+<button class="w-16 h-16 bg-[#2DD4BF] rounded-full shadow-[0_20px_50px_rgba(45,212,191,0.3)] flex items-center justify-center text-white active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</button>
+</div>
+<!-- Footer -->
+<footer class="w-full mt-[120px] bg-slate-50 border-t border-slate-200">
+<div class="max-w-[1120px] mx-auto py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="space-y-4">
+<div class="text-lg font-bold text-slate-400">EduQuery</div>
+<p class="font-inter text-xs uppercase tracking-widest text-slate-500 max-w-sm">
+                    © 2024 University Help Desk. Providing calm clarity for every student journey.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-inter text-xs uppercase tracking-widest">
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Admissions Support</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Campus Security</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Contact Faculty</a>
+</div>
+</div>
+</footer>
+</body></html>
